@@ -14,7 +14,10 @@ body{
     position: relative;
 }
 
-@media (min-width: 1440px) { 
+@media  screen and (min-width: 1440px) { 
+    html,body {
+        -webkit-property: value;
+      }
     #zone1{
         width: 1136px;
     }
@@ -27,7 +30,10 @@ body{
 }
 
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
-@media (max-width: 1439.98px) { 
+@media  screen and (max-width: 1439.98px) { 
+    html,body {
+        -webkit-property: value;
+      }
     #zone1{
         width: 1136px;
     }
@@ -37,7 +43,10 @@ body{
 }
 
 /* // `xl` applies to large devices (desktops, less than 1240px) */
-@media (max-width: 1239.98px) { 
+@media  screen and (max-width: 1239.98px) { 
+    html,body {
+        -webkit-property: value;
+      }
     html,body{
         font-size: 15px;
     }
@@ -53,14 +62,20 @@ body{
 }
 
 /* Chinh them */
-@media (max-width: 1063.98px) { 
+@media  screen and (max-width: 1063.98px) { 
+    html,body {
+        -webkit-property: value;
+      }
     html,body{
         font-size: 14px;
     }
 }
 
 /* // `lg` applies to medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) { 
+@media  screen and (max-width: 991.98px) { 
+    html,body {
+        -webkit-property: value;
+      }
     html,body{
         font-size: 14px;
     }
@@ -108,7 +123,10 @@ body{
 }
 
 /* Chinh lai them  */
-@media (max-width: 888px) { 
+@media  screen and (max-width: 888px) { 
+    html,body {
+        -webkit-property: value;
+      }
     html,body{
         font-size: 13px;
     }
@@ -130,7 +148,10 @@ body{
 }
 
 /* // `md` applies to small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) { 
+@media  screen and (max-width: 767.98px) { 
+    html,body {
+        -webkit-property: value;
+      }
     html,body{
         font-size: 16px;
     }
@@ -171,7 +192,10 @@ body{
 }
 
 /* // `sm` applies to x-small devices (portrait phones L, less than 576px) */
-@media (max-width: 575.98px) { 
+@media  screen and (max-width: 575.98px) { 
+    html,body {
+        -webkit-property: value;
+      }
     #zone1{
         width: 100%;
         box-shadow: none;
@@ -201,14 +225,19 @@ body{
 }
 
 /* // `sm` applies to x-small devices (portrait phones M, less than 425px) */
-@media (max-width: 425.02px){
+@media  screen and (max-width: 425.02px){
+    html,body {
+        -webkit-property: value;
+      }
     html,body{
         font-size: 14px;
     }
 }
 
 /* // `sm` applies to x-small devices (portrait phones S, less than 360px) */
-@media (max-width: 360.02px){
+@media  screen and (max-width: 360.02px){html,body {
+    -webkit-property: value;
+  }
     html,body{
         display: none;
     }

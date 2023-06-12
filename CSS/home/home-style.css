@@ -57,6 +57,9 @@ header{
 
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media  screen and (max-width: 991.98px) { 
+    html,body {
+        -webkit-property: value;
+      }
     html,body{
         font-size: 14px;
     }
@@ -175,6 +178,9 @@ header{
 
 /* Chinh lai them  */
 @media  screen and (max-width: 888px) { 
+    html,body {
+        -webkit-property: value;
+      }
     html,body{
         font-size: 13px;
     }
@@ -202,6 +208,9 @@ header{
 
 /* // `md` applies to small devices (landscape phones, less than 768px) */
 @media  screen and (max-width: 767.98px) { 
+    html,body {
+        -webkit-property: value;
+      }
     html,body{
         font-size: 16px;
     }
@@ -418,7 +427,9 @@ header{
 
 /* // `sm` applies to x-small devices (portrait phones L, less than 576px) */
 @media  screen and (max-width: 575.98px) { 
-    
+    html,body {
+        -webkit-property: value;
+      }
     header{
         height: 100px;
         .func .user{
@@ -499,6 +510,9 @@ header{
 
 /* // `sm` applies to x-small devices (portrait phones M, less than 425px) */
 @media  screen and (max-width: 425.02px){
+    html,body {
+        -webkit-property: value;
+      }
     html,body{
         font-size: 14px;
     }
@@ -548,6 +562,9 @@ header{
 
 /* // `sm` applies to x-small devices (portrait phones S, less than 360px) */
 @media  screen and (max-width: 360.02px){
+    html,body {
+        -webkit-property: value;
+      }
     html,body{
         display: none;
     }
