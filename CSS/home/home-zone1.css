@@ -1,0 +1,102 @@
+#zone1{
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+#zone1 .banner img{
+    width: 100%;
+    z-index: 0;
+    transition: all 1s;
+}
+#zone1 .banner .m-img{
+    display: none;
+}
+#zone1 .title{
+    display: block;
+    position: absolute;
+    top: 22.25%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#zone1 .title h1{
+    color: #fff;
+    font-size: 500%;
+    white-space: nowrap;
+}
+#zone1 .sub-title{
+    display: block;
+    border: 1px solid #fff;
+    border-right: none;
+    border-left: none;
+    position: absolute;
+    left: 50%;
+    top: 48.65%;
+    transform: translateX(-50%);
+}
+
+#zone1 .sub-title p{
+    color: #fff;
+    font-size: 150%;
+    line-height: 200%;
+    padding: 8px 60px 8px 60px;
+    white-space: nowrap;
+}
+#zone1 .m-sub-title{
+    display: none;
+    border: 1px solid #fff;
+    border-right: none;
+    border-left: none;
+    position: absolute;
+    left: 5%;
+    top: 30%;
+}
+#zone1 .m-sub-title p{
+    color: #fff;
+    font-size: 150%;
+    line-height: 200%;
+    padding: 8px 60px 8px 0px;
+    white-space: nowrap;
+}
+#zone1 a{
+    display: block;
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    position: absolute;
+    top: 70%;
+    left:50%;
+    transform: translateX(-50%);
+    border-radius: 8px;
+    padding: 8px 46px 8px 46px;
+    line-height: 24px;
+    overflow: hidden;
+}
+#zone1:hover img{
+    scale: 1.1;
+}
+#zone1 a:hover {
+    box-shadow: 1px 1px 25px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+#zone1 a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      120deg,
+      transparent,
+      rgba(0, 0, 0, 0.2),
+      transparent
+    );
+}
+  
+#zone1 a:hover:before {
+    left: 100%;
+    transition: all 650ms;
+} 
+#zone1 a:not(:hover:before) {
+    transition: 0!;
+} 

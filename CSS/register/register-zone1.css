@@ -1,0 +1,130 @@
+#zone1{
+    position: relative;
+    z-index: 1;
+    width: 75%;
+    display: flex;
+    margin: 0 auto;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 1px 1px 25px 5px rgba(0, 0, 0, 0.3);
+    .banner{
+        width: 55%;
+        border: 0;
+        overflow: hidden;
+    }
+    .banner img{
+        width: 100%;
+        scale: 1.05;
+    }
+    .content {
+        width: 45%;
+    }
+    .content .brand-name{
+        width: 70%;
+        margin: 10% auto;
+        font-size: 1.5em;
+    }
+    .content .brand-name a{
+        text-decoration: none;
+        color: #000;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        white-space: nowrap;
+    }
+    .content .logo{
+        width: 10%;
+    }
+    .content .logo img{
+        width: 100%;
+    }
+    .content .register{    
+        width: 85%;
+        margin: 0 auto;
+    }
+    .register h3{
+        margin-bottom: 7%;
+        font-size: 1.25em;
+    }
+    .register form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .register input[type="text"], .register input[type="password"]{
+        height: 100%;
+        margin-bottom: 5%;
+        padding: 3%;
+        padding-left: 2%;
+        padding-right: 1%;
+        border-radius: 4px;
+        border: 1.5px solid #6e5544;
+        background-color: #fff9f6;
+    }
+    .register .ho{
+        width: 28%;
+    }
+    .register .ten{
+        width: 28%;
+    }
+    .register .nam-sinh{
+        width: 28%;
+    }
+    .register .tai-khoan{
+        width: 100%;
+    }
+    .register .mat-khau{
+        width: 100%;
+    }
+    .register .mat-khau-lv2{
+        width: 100%;
+    }
+    .register label{
+        padding-left: 5%;
+    }
+    .register input[type="checkbox"]{
+        position: absolute;
+        top: 20%;
+        left: 0;
+        scale: 1.5;
+    }
+    .register .nhan-tbao{
+        width: 100%;
+        display: flex;
+        align-items: start;
+        margin-top: 0;
+        position: relative;
+    }
+    .register .dieu-khoan{
+        width: 100%;
+        display: flex;
+        align-items: start;
+        margin-top: 5%;
+        position: relative;
+    }
+    .register .button{
+        width: 100%;
+        margin: 5% auto;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .register .button a{
+        display: flex;
+        justify-content: center;
+        padding: 8px 0 8px 0;
+        text-decoration: none;
+        color: #fff;
+        background-color: #000;
+        width: 100%;
+        border-radius: 6px;
+    }
+    .register a{
+        color: #b78d71;
+    }
+    .register a:not(:hover){
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,109 @@
+#zone4{
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+#zone4 img{
+    width: 100%;
+    transition: all 1s;
+}
+#zone4 .m-img{
+    display: none;
+}
+#zone4 .content{
+    display: block;
+    border: 3px solid #fff;
+    border-bottom: none;
+    border-right: none;
+    width: 45%;
+    height: 0;
+    padding-bottom: 30%;
+    position: absolute;
+    top: 18%;
+    left: 10%;
+    color: #fff;
+}
+#zone4 .content .title{
+    width: 80%;
+    font-size: 300%;
+    display: block;
+    position: absolute;
+    top:18%;
+    left: 45%;
+    transform: translate(-50%,-50%);
+    white-space: nowrap;
+}
+#zone4 .detail {
+    display: block;
+    position: absolute;
+    width: 80%;
+    top:50%;
+    left: 55%;
+    transform: translate(-50%,-50%);
+}
+#zone4 .detail >p{
+    font-size: 280%;
+    padding-bottom: 5%;
+    white-space: nowrap;
+}
+#zone4 .detail >div{
+    display: block;
+    width: 85%;
+    text-align: justify;
+}
+#zone4 a{
+    display: block;
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    margin-top: 10%;
+    position: absolute ;
+    border-radius: 8px;
+    padding: 8px 46px 8px 46px;
+    line-height: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+#zone4 .thanh-ngang{
+    height: 3px;
+    width: 65%;
+    position: absolute;
+    top: 100%;
+    left: -3px;
+    background-color: #fff;
+}
+
+#zone4 .thanh-doc{
+    height: 86%;
+    width: 3px;
+    position: absolute;
+    top: -3px;
+    left: 100%;
+    background-color: #fff;
+}
+#zone4:hover img{
+    scale: 1.1;
+}
+#zone4 a:hover {
+    box-shadow: 1px 1px 25px 10px rgba(255,255,255, 0.3);
+  }
+  
+#zone4 a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      120deg,
+      transparent,
+      rgba(0, 0, 0, 0.2),
+      transparent
+    );
+    transition: all 650ms;
+}
+  
+#zone4 a:hover:before {
+    left: 100%;
+} 

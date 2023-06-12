@@ -1,0 +1,135 @@
+
+header{
+    position: relative;
+    z-index: 1;
+    background-color: #FFF9F6;
+}
+header .logo{
+    position: absolute;
+    height: 31.25%;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
+header #menu{
+    height: 40%;
+    width: 28%;
+    position: absolute;
+    bottom: 12%;
+    left:9%;
+}
+#menu ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+#menu a{
+    text-decoration: none;
+    color: #000;
+    display: block;
+    white-space: nowrap;
+}
+#menu li {
+    display: block;
+    display: flex;
+    position: relative; 
+    align-items: center;
+    padding: 0 5% 0 5%;
+    transition: all 0.75s;
+}
+
+#menu a~img {
+    height: 30%;
+    margin-left: 0.5rem;
+}
+header .brand-name{
+    height: 40%;
+    position: absolute;
+    bottom: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+header .brand-name h3{
+    font-size: 250%;
+    display: flex;
+    align-items: flex-end;
+    white-space: nowrap;
+}
+header .func{
+    height: 40%;
+    width: 27.5%;
+    position: absolute;
+    bottom: 12%;
+    right: 8%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.func .basket{
+    height: 70%;
+    transition: all 0.5s;
+}
+.func .basket img{
+    height: 100%; 
+    cursor: pointer;
+}
+.func .basket:hover{
+    border-radius: 15%;
+    background-color: rgba(251, 188, 5, 0.6);
+    scale: 1.3;
+}
+.func .user{
+    height: 70%;
+    transition: all 0.5s;
+}
+.func .user img{
+    height: 100%;
+    cursor: pointer;
+}
+.func .user:hover{
+    border-radius: 15%;
+    background-color: rgba(251, 188, 5, 0.6);
+    scale: 1.3;
+}
+.search{
+    width: 65%;
+    height: 70%;
+}
+.search form{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.search input[type="text"]{
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    border: 0.5px solid black;
+    padding: 0 0 0 3%;
+}
+.search img{
+    height: 60%;
+    position: absolute;
+    right: 0%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+#menu li:hover{
+    scale: 1.1;
+}
+
+#menu li:hover a{
+    color: rgba(251, 188, 5, 0.6);
+}
+#menu .icon-menu{
+    display: none;
+}

@@ -1,0 +1,554 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    background-color: #f5f5f5;
+    /* background-color: #fff; */
+    font-size: 16px;
+}
+body{
+    background-color: #FFF9F6;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+header{
+        height: 128px;
+    }
+
+@media (min-width: 1440px) { 
+    /* body{
+        width: 1440px;
+        width: 100%;
+    } */
+    html{
+        font-size: 18px;
+    }
+}
+
+/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1439.98px) { 
+    
+}
+
+/* // `xl` applies to large devices (desktops, less than 1240px) */
+@media (max-width: 1239.98px) { 
+    html,body{
+        font-size: 15px;
+    }
+    header{
+        height: 100px;
+    }
+}
+
+/* Chinh them */
+@media (max-width: 1063.98px) { 
+    html,body{
+        font-size: 14px;
+    }
+    header{
+        height: 80px;
+    }
+    #zone2 .button a{
+        bottom: 20%;
+    }
+}
+
+/* // `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    html,body{
+        font-size: 14px;
+    }
+    header{
+        #menu{
+            .menu-lv1{
+                display: none;
+            }
+            .icon-menu{
+                display: block;
+                height: 100%;
+            }
+            .icon-menu img{
+                height: 100% ;
+            }
+        }
+        .func .user{
+            height: 80%;
+            position: absolute;
+            left: -165%;
+        }
+        .func .basket{
+            height: 80%;
+            position: absolute;
+            left: -180%;
+        }
+    }
+    #zone1{
+        .button a{
+            padding: 4px 28px 4px 28px;
+        }
+    }
+    #zone2{
+        .button a{
+            padding: 4px 28px 4px 28px;
+            /* bottom: 5%; */
+        }
+        .title h2{
+            font-size: 180%;
+        }
+        .content h3{
+            font-size: 240%;
+        }
+    }
+    #zone3 {
+        .button a{
+            padding: 4px 28px 4px 28px;
+        }
+        .sp .button a{
+            padding: 6px 0 6px 0;
+        }
+    }
+    #zone4{
+        .button a{
+            padding: 4px 28px 4px 28px;
+        }
+        .content .title{
+            font-size: 230%;
+            top: 14%;
+            left: 45%;
+        }
+        .content .detail > p{
+            font-size: 200%;
+        }
+        .content .button a{
+            margin-top: 5%;
+        }
+        
+    }
+    #zone5{
+        .text h5{
+            font-size: 1.5em;
+        }
+    }
+    #zone6 .tron1{
+        top:13%;
+        right: -50%;
+    }
+    footer{
+        .zone1{
+            flex-direction: column;
+            .col,.col2{
+                width: 80%;
+            }
+            .col2 .icon{
+                float: left;
+            }
+            .col h3{
+                padding-bottom: 1%;
+            }
+            .col input[type="email"]{
+                height: 70%;
+            }
+            .col form{
+                margin-bottom: 2%;
+            }
+            .col form img{
+                top: 40%;
+            }
+            .col2 h3{
+                float: left;
+                padding-bottom: 1%;
+            }
+            .col2 .icon{
+                width: 50%;
+                margin-bottom: 5%;
+            }
+        }
+        .zone2{
+            .col2 .col-lv2{
+                width: 50%;
+            }
+        }
+    }
+}
+
+/* Chinh lai them  */
+@media (max-width: 888px) { 
+    html,body{
+        font-size: 13px;
+    }
+    #zone2{
+        .button a{
+            bottom: 10%;
+        } 
+    }
+    footer{
+        .zone2{
+            flex-direction: column;
+            .col2 .col-lv2{
+                width: 30%;
+            }
+            .col{
+                width: 100%;
+                margin-bottom: 3%;
+            }
+            .col2{
+                width: 80%;
+            }
+        }
+    }
+}
+
+/* // `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    html,body{
+        font-size: 16px;
+    }
+    header{
+        height: 128px;
+        .func{
+            right: 6%;
+        }
+        .func input[type="text"]{
+            display: none;
+        }
+        .func .search img{
+            height: 100%;
+            right: 0 ;
+            
+        }
+        .func .search form{
+            width: 100%;
+            height: 100%;
+            right: -50%;
+        }
+        .func .search{
+            width: 35px;
+            height: 35px;
+            position: absolute;
+            right: 40%;
+            transition: all 0.5s;
+        }
+        .func .basket{
+            height: 35px;
+            left: auto;
+            right: 15%;
+        }
+        .func .user{
+            height: 33px;
+            left: auto;
+            right: -10%;
+        }
+        .brand-name h3{
+            font-size: 240%;
+        }
+        .func .search:hover{
+            border-radius: 15%;
+            background-color: rgba(251, 188, 5, 0.6);
+            scale: 1.3;
+        }
+    }
+    #zone1{
+        .sub-title{
+            display: none;
+        }
+        .m-sub-title{
+            display: block;
+            font-size: 150%;
+            top: 35%;
+        }
+        .title{
+            left: 5%;
+            top: 15%;
+            padding: 6px 0 6px 0;
+            transform: translate(0,0);
+        }
+        .title h1{
+            font-size: 400%;
+        }
+        .button a{
+            font-size: 1.5em;
+            left: 5%;
+            top: 75%;
+            transform: translate(0,0);
+            padding: 10px 56px 10px 56px;
+        }
+        .banner .m-img{
+            display: inline;
+        }
+        .banner .img{
+            display: none;
+        }
+    }
+    #zone2{
+        flex-direction: column;
+        width: 90%;
+        .col{
+            width: 100%;
+        }
+        .content{
+            position: absolute;
+            bottom: 0 ;
+            z-index: 1;
+            color: #FFF9F6;
+            background-color: rgba(0,0,0,0.3);
+            padding: 3%;
+            padding-top: 0;
+            padding-bottom: 15%;
+            width: 94%;
+            border-radius: 16px;
+        }
+        .button a{
+            bottom: 0;
+            z-index: 1;
+            background-color: #fff;
+            color: #000;
+            margin: 3%;
+            margin-bottom: 5%;
+            padding: 10px 50px 10px 50px;
+        }
+        .button a::before{
+            background: linear-gradient(
+            120deg,
+            transparent,
+            rgba(0,0,0, 0.2),
+            transparent
+            );
+        }
+    }
+    #zone3{
+        width: 90%;
+        .row{
+            flex-wrap: wrap;
+            position: static;
+        }
+        .col{
+            width: 45%;
+            padding-bottom: 10%;
+        }
+        .button a{
+            padding: 10px 50px 10px 50px;
+            position: absolute;
+            bottom: -3%;
+            right: 0;
+            font-size: 1.5em;
+        }
+        .sp .button a{
+            padding: 10px 0 10px 0;
+            position: relative;
+            font-size: 100%;
+        }
+    }
+    #zone4{
+        padding: 150px auto;    
+        .img{
+            display: none;
+        }
+        .m-img{
+            display: inline;
+        }
+        .thanh-ngang{
+            display: none;
+        }
+        .thanh-doc{
+            display: none;
+        }
+        .content{
+            border: 4px solid #fff;
+            border-radius: 16px;
+            top: auto;
+            bottom: 3%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            height: 20%;
+        }
+        .content .title{
+            font-size: 3em;
+            top: 20%;
+        }
+        .content .detail >p{
+            font-size: 2.5em;
+        }
+        .content .detail{
+            left: 50%;
+        }
+        .button a{
+            padding: 10px 50px 10px 50px;
+            font-size: 1.25em;
+        }
+    }
+    #zone5{
+        display: none;
+    }
+    
+    #m-zone5{
+        display: flex;
+    }
+    #zone6{
+        .tron1{
+            right: 0;
+            top:18%;
+        }
+        .tron4{
+            display: inline;
+            left: -60%;
+            top: 40%;
+        }
+    }
+    footer{
+        width: 90%;
+        margin-top: 100px;
+        .zone1 .col, .zone1 .col2{
+            white-space: nowrap;
+        }
+        .zone1 h3{
+            font-size: 2em;
+        }
+        .zone1 .col form{
+            height: 20px;
+            width: 70%;
+        }
+        .zone1 .col2 .icon{
+            width: 60%;
+        }
+    }
+}
+
+/* // `sm` applies to x-small devices (portrait phones L, less than 576px) */
+@media (max-width: 575.98px) { 
+    
+    header{
+        height: 100px;
+        .func .user{
+            display: none;
+        }
+        .func .basket{
+            right: -5%;
+        }
+        .func .search{
+            right: 25%;
+        }
+        .brand-name h3{
+            font-size: 2em;
+        }
+    }
+    #zone1{
+        .title h1{
+            font-size:3em;
+        }
+        .m-sub-title p{
+            font-size: 1.1em;
+        }
+    }
+    #zone2{
+        .content{
+            padding-bottom: 20%;
+        }
+    }
+    #zone3{
+        .button a{
+            padding: 8px 40px 8px 40px;
+            font-size: 1.25em;
+            bottom: -4%;
+        }
+    }
+    #zone4{
+        .content{
+            height: 70%;
+            bottom: auto;
+            top: 0;
+            transform: translateX(0);
+            transform: translate(-50%,5%);
+        }
+        .content .title p{
+            white-space: pre-wrap;
+        }
+        .content .detail p{
+            white-space: pre-wrap;
+        }
+        .content .detail .button a{
+            /* top: 0; */
+            margin-top: 15%;
+        }
+    }
+    #m-zone5{
+        .text h3{
+            font-size: 2.5em;
+        }
+    }
+    footer{
+        .zone1{
+            .col h3, .col2 h3{
+                font-size: 1.75em;
+            }
+        }
+        .zone2 .title h2{
+            font-size: 2.5em;
+        }
+        .zone2 .col2{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .zone2 .col2 .col-lv2{
+            width: 45%;
+        }
+    }
+}
+
+/* // `sm` applies to x-small devices (portrait phones M, less than 425px) */
+@media (max-width: 425.02px){
+    html,body{
+        font-size: 14px;
+    }
+    header{
+        height: 80px;
+        .brand-name h3{
+            font-size: 1.75em;
+        }
+        .func .search{
+            width: 30px;
+            height: 30px;
+        }
+        .func .basket{
+            height: 30px;
+            
+        }
+    }
+    #zone1{
+        .button a{
+            padding-top:5px ;
+            padding-bottom: 5px;
+        }
+    }
+    #zone2{
+        .button a{
+            padding-top:5px ;
+            padding-bottom: 5px;
+        }
+    }
+    #zone3{
+        .button a{
+            padding-top:5px ;
+            padding-bottom: 5px;
+        }
+        .sp .button a{
+            padding-top:5px ;
+            padding-bottom: 5px;
+        }
+    }
+    #zone4{
+        .button a{
+            padding-top:5px ;
+            padding-bottom: 5px;
+        }
+    }
+}
+
+/* // `sm` applies to x-small devices (portrait phones S, less than 360px) */
+@media (max-width: 360.02px){
+    html,body{
+        display: none;
+    }
+}
