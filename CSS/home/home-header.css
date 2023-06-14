@@ -1,7 +1,7 @@
 
 header{
     position: relative;
-    z-index: 1;
+    z-index: 2;
     background-color: #FFF9F6;
 }
 header .logo{
@@ -40,12 +40,28 @@ header #menu{
     position: relative; 
     align-items: center;
     padding: 0 5% 0 5%;
-    transition: all 0.75s;
+    transition: all 0.5s;
 }
 
 #menu a~img {
     height: 15%;
     margin-left: 0.5rem;
+}
+#menu .menu-lv2{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -10%;
+    width: 100%;
+}
+#menu .menu-lv2 li{
+    display: block;
+    padding: 16px 32px;
+    background-color: #FFF9F6;
+    min-width: 100%;
+}
+#menu li:hover > .menu-lv2{
+    display: block;
 }
 header .brand-name{
     height: 40%;
@@ -127,7 +143,7 @@ header .func{
     scale: 1.1;
 }
 
-#menu li:hover a{
+#menu li:hover>a{
     color: rgba(251, 188, 5, 0.6);
 }
 #menu .icon-menu{

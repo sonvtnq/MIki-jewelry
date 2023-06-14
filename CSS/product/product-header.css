@@ -1,0 +1,304 @@
+header{
+    position: relative;
+    z-index: 2;
+    background-color: #FFF9F6;
+    height: 128px;
+}
+header .logo{
+    position: absolute;
+    height: 31.25%;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
+header #menu{
+    height: 40%;
+    width: 28%;
+    position: absolute;
+    bottom: 12%;
+    left:9%;
+}
+#menu ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+#menu a{
+    text-decoration: none;
+    color: #000;
+    display: block;
+    white-space: nowrap;
+}
+#menu li {
+    display: block;
+    display: flex;
+    position: relative; 
+    align-items: center;
+    padding: 0 5% 0 5%;
+    transition: all 0.5s;
+}
+
+#menu a~img {
+    height: 15%;
+    margin-left: 0.5rem;
+}
+#menu .menu-lv2{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -10%;
+    width: 100%;
+}
+#menu .menu-lv2 li{
+    display: block;
+    padding: 16px 32px;
+    background-color: #FFF9F6;
+    min-width: 100%;
+}
+#menu li:hover > .menu-lv2{
+    display: block;
+}
+header .brand-name{
+    height: 40%;
+    position: absolute;
+    bottom: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+header .brand-name h3{
+    font-size: 250%;
+    display: flex;
+    align-items: flex-end;
+    white-space: nowrap;
+}
+header .func{
+    height: 40%;
+    width: 27.5%;
+    position: absolute;
+    bottom: 12%;
+    right: 8%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.func .basket{
+    height: 70%;
+    transition: all 0.5s;
+}
+.func .basket img{
+    height: 100%; 
+    cursor: pointer;
+}
+.func .basket:hover{
+    border-radius: 15%;
+    background-color: rgba(251, 188, 5, 0.6);
+    scale: 1.3;
+}
+.func .user{
+    height: 70%;
+    transition: all 0.5s;
+}
+.func .user img{
+    height: 100%;
+    cursor: pointer;
+}
+.func .user:hover{
+    border-radius: 15%;
+    background-color: rgba(251, 188, 5, 0.6);
+    scale: 1.3;
+}
+.search{
+    width: 65%;
+    height: 70%;
+}
+.search form{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.search input[type="text"]{
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    border: 0.5px solid black;
+    padding: 0 0 0 3%;
+}
+.search img{
+    height: 60%;
+    position: absolute;
+    right: 0%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+#menu li:hover{
+    scale: 1.1;
+}
+
+#menu li:hover>a{
+    color: rgba(251, 188, 5, 0.6);
+}
+#menu .icon-menu{
+    display: none;
+}
+
+
+
+
+@media  screen and (min-width: 1440px) { 
+    header{
+        width: 1440px;
+        margin: 0 auto;
+    }
+}
+
+/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media  screen and (max-width: 1439.98px) { 
+    
+}
+
+/* // `xl` applies to large devices (desktops, less than 1240px) */
+@media  screen and  (max-width: 1239.98px) { 
+    header{
+        height: 100px;
+    }
+}
+
+/* Chinh them */
+@media  screen and (max-width: 1063.98px) { 
+    header{
+        height: 80px;
+    }
+}
+
+/* // `lg` applies to medium devices (tablets, less than 992px) */
+@media  screen and (max-width: 991.98px) { 
+    header{
+        #menu{
+            .menu-lv1{
+                display: none;
+            }
+            .icon-menu{
+                display: block;
+                height: 100%;
+            }
+            .icon-menu img{
+                height: 100% ;
+            }
+        }
+        .func .user{
+            height: 80%;
+            position: absolute;
+            left: -165%;
+        }
+        .func .basket{
+            height: 80%;
+            position: absolute;
+            left: -180%;
+        }
+    }
+}
+
+/* Chinh lai them  */
+@media only screen and (max-width: 888px) { 
+}
+
+/* // `md` applies to small devices (landscape phones, less than 768px) */
+@media only screen and (max-width: 767.98px) { 
+    header{
+        height: 128px;
+        .func{
+            right: 6%;
+        }
+        .func input[type="text"]{
+            display: none;
+        }
+        .func .search img{
+            height: 100%;
+            right: 0 ;
+            
+        }
+        .func .search form{
+            width: 100%;
+            height: 100%;
+            right: -50%;
+        }
+        .func .search{
+            width: 35px;
+            height: 35px;
+            position: absolute;
+            right: 40%;
+            transition: all 0.5s;
+        }
+        .func .basket{
+            height: 35px;
+            left: auto;
+            right: 15%;
+        }
+        .func .user{
+            height: 33px;
+            left: auto;
+            right: -10%;
+        }
+        .brand-name h3{
+            font-size: 240%;
+        }
+        .func .search:hover{
+            border-radius: 15%;
+            background-color: rgba(251, 188, 5, 0.6);
+            scale: 1.3;
+        }
+    }
+}
+
+/* // `sm` applies to x-small devices (portrait phones L, less than 576px) */
+@media only screen and (max-width: 575.98px) { 
+    header{
+        height: 100px;
+        .func .user{
+            display: none;
+        }
+        .func .basket{
+            right: -5%;
+        }
+        .func .search{
+            right: 25%;
+        }
+        .brand-name h3{
+            font-size: 2em;
+        }
+    }
+}
+
+/* // `sm` applies to x-small devices (portrait phones M, less than 425px) */
+@media only  screen and (max-width: 425.02px){
+    header{
+        height: 80px;
+        .brand-name h3{
+            font-size: 1.75em;
+        }
+        .func .search{
+            width: 30px;
+            height: 30px;
+        }
+        .func .basket{
+            height: 30px;
+            
+        }
+    }
+}
+
+/* // `sm` applies to x-small devices (portrait phones S, less than 360px) */
+@media only screen and (max-width: 360.02px){
+    html,body{
+        display: none;
+    }
+}

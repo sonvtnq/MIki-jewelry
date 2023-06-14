@@ -1,0 +1,130 @@
+#zone1{
+    width: 100%;
+    .banner img{
+        width: 100%;
+    }
+}
+
+#zone2{
+    width: 80%;
+    margin: 0 auto;
+    .path{
+        width: 15%;
+        margin: 5% auto;
+        margin-left: 0;
+    }
+    .content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 5% 0;
+        padding-top: 0;
+        /* border: 1px solid red; */
+        .title{
+            width: 40%;
+            font-size: 1.5em;
+            /* border: 1px solid black; */
+        }
+        .sort{
+            width: 40%;
+            display: flex;
+            justify-content: end;
+            /* border: 1px solid black; */
+            align-items: center;
+            >img{
+                height: 15%;
+            }
+        }
+    }
+    .products{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .sp{
+            margin: 2% 0;
+            width: 22.5%;
+            .img{
+                width: 100%;
+                >img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .button a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    border-radius: 8px;
+    padding: 8px 46px 8px 46px;
+    line-height: 24px;
+    overflow: hidden;
+    position: relative;
+    }
+    > .button, #zone3 .title{
+        padding-bottom: 7%;
+    }
+
+     .sp{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+     .sp img{
+        width: 100%;
+        border-radius: 8px;
+    }
+    .sp .name{
+        font-size: 125%;
+        line-height: 175%;
+        letter-spacing: -1.9%;
+        align-self: center;
+    }
+    .sp .price{
+        font-size: 125%;
+        line-height: 175%;
+        letter-spacing: -1.9%;
+        color: #92715A;
+        align-self: center;
+    }
+    .sp .button{
+        width: 100%;
+        max-width: 100%;
+        white-space: nowrap;
+        text-align: center;
+        
+    }
+    .sp .button a{
+        padding: 8px 0 8px 0;
+    }
+     .sp:hover img{
+        box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.3);
+        transition: all 0.25s;
+    }
+     a:hover{
+        box-shadow: 1px 1px 10px 5px rgba(0,0,0, 0.5);
+    }
+    .button a:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255, 0.4),
+        transparent
+        );
+    }
+    
+     a:hover:before {
+        left: 100%;
+        transition: all 0.75s;
+    } 
+    .button a:not(:hover:before) {
+        transition: 0;
+    } 
+}

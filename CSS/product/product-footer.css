@@ -1,0 +1,279 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 80%;
+    margin: 120px auto;
+    margin-bottom: 0;
+    z-index: 1;
+}
+
+/* zone1 */
+footer .zone1 {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+footer .zone1 .col{
+    width: 50%;
+    position: relative;
+}
+footer .zone1 .col2{
+    width: 50%;
+}
+footer .zone1 .icon img{
+    width: 100%;
+    transition: all 0.25s;
+}
+footer .zone1 .icon .facebook{
+    width: 5.77%;
+} 
+footer .zone1 .icon .twiter{
+    width: 13%;
+} 
+footer .zone1 .icon .instagram{
+    width: 11.5%;
+} 
+footer .zone1 .icon .tiktok{
+    width: 11.5%;
+} 
+footer .zone1 .icon .pinterest{
+    width: 11.5%;
+} 
+footer .zone1 .col2 h3{
+    float: right;
+}
+footer .zone1 .col2 .icon{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    float: right;
+    margin: 0 0 8% 0;
+}
+footer .zone1 h3{
+    font-size: 2.3em;
+    padding: 0 0 5% 0;
+}
+footer .zone1 input[type="email"]{
+    height: 90%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #FFF9F6;
+    border: 2px solid #6e5544;
+    padding: 0 0 0 3%;
+    border-radius: 8px;
+    width: 100%;
+}
+footer .zone1 form{
+    position: relative;
+    width: 60%;
+    margin: 0 0 3% 0;
+    padding: 4%;
+}
+footer .zone1 form img{
+    height: 40%;
+    position: absolute;
+    top: 50%;
+    right: 3%;
+    transform: translate(50%,-50%);
+}
+footer .dong-ke{
+    width: 100%;
+    height: 2px;
+    background-color: #6e5544;
+    margin: 0 0 3% 0;
+}
+footer .icon img:hover{
+    scale: 1.2;
+}
+/* zone2 */
+footer .zone2{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 2%;
+}
+footer .zone2 .col{
+    width: 35% ;
+    line-height: 150%;
+}
+footer .zone2 .title h2{
+    font-size: 3em;
+    padding-bottom: .7em;
+    white-space: nowrap;
+}
+footer .zone2 .col2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 50%;
+    line-height: 200%;
+    padding-right: 5%;
+}
+footer .zone2 ul{
+    list-style: none;
+}
+footer .zone2 ul li{
+    margin-left: 5%;
+    transition: all 0.5s;
+}
+footer .zone2 .col-lv2{
+    width: 30%;
+    margin-bottom: 5%;
+}
+footer .zone2 .col-lv2 h3{
+    font-size: 1.25em ;
+    white-space: nowrap;
+}
+footer .zone2 ul a{
+    text-decoration: none;
+    color: #000;
+    white-space: nowrap;
+}
+footer .zone2 ul li:hover{
+    scale: 1.1;
+}
+footer .zone2 ul li:hover a{
+    color: rgba(251, 188, 5, 0.6);
+}
+
+/* zone3 */
+footer .zone3{
+    margin: 0 auto;
+}
+
+
+/* media */
+@media  screen and (min-width: 1440px) { 
+    html{
+        font-size: 18px;
+    }
+}
+
+/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media  screen and (max-width: 1439.98px) { 
+}
+
+/* // `xl` applies to large devices (desktops, less than 1240px) */
+@media  screen and (max-width: 1239.98px) { 
+    footer{
+        width: 85%;
+    }
+}
+
+/* Chinh them */
+@media  screen and (max-width: 1063.98px) { 
+}
+
+/* // `lg` applies to medium devices (tablets, less than 992px) */
+@media  screen and (max-width: 991.98px) { 
+    footer{
+        width: 90%;
+        .zone1{
+            flex-direction: column;
+            .col,.col2{
+                width: 80%;
+            }
+            .col2 .icon{
+                float: left;
+            }
+            .col h3{
+                padding-bottom: 1%;
+            }
+            .col input[type="email"]{
+                height: 70%;
+            }
+            .col form{
+                margin-bottom: 2%;
+            }
+            .col form img{
+                top: 40%;
+            }
+            .col2 h3{
+                width: 100%;
+                float: left;
+                padding-bottom: 1%;
+            }
+            .col2 .icon{
+                width: 50%;
+                margin-bottom: 5%;
+            }
+        }
+        .zone2{
+            .col2 .col-lv2{
+                width: 50%;
+            }
+        }
+    }
+}
+
+/* Chinh lai them  */
+@media  screen and (max-width: 888px) { 
+    footer{
+        .zone2{
+            flex-direction: column;
+            .col2 .col-lv2{
+                width: 30%;
+            }
+            .col{
+                width: 100%;
+                margin-bottom: 3%;
+            }
+            .col2{
+                width: 80%;
+            }
+        }
+    }
+}
+
+/* // `md` applies to small devices (landscape phones, less than 768px) */
+@media  screen and (max-width: 767.98px) { 
+    footer{
+        width: 90%;
+        margin-top: 100px;
+        .zone1 .col, .zone1 .col2{
+            white-space: nowrap;
+        }
+        .zone1 h3{
+            font-size: 2em;
+        }
+        .zone1 .col form{
+            height: 20px;
+            width: 70%;
+        }
+        .zone1 .col2 .icon{
+            width: 60%;
+        }
+    }
+}
+
+/* // `sm` applies to x-small devices (portrait phones L, less than 576px) */
+@media  screen and (max-width: 575.98px) { 
+    footer{
+        .zone1{
+            .col h3, .col2 h3{
+                font-size: 1.75em;
+            }
+        }
+        .zone2 .title h2{
+            font-size: 2.5em;
+        }
+        .zone2 .col2{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .zone2 .col2 .col-lv2{
+            width: 45%;
+        }
+    }
+}
+
+/* // `sm` applies to x-small devices (portrait phones M, less than 425px) */
+@media  screen and (max-width: 425.02px){
+}
+
+/* // `sm` applies to x-small devices (portrait phones S, less than 360px) */
+@media  screen and (max-width: 360.02px){
+}
+
