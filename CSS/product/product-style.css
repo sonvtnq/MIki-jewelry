@@ -43,6 +43,14 @@ body{
     html,body{
         font-size: 14px;
     }
+    #zone2 {
+        .button a{
+            padding: 4px 28px 4px 28px;
+        }
+        .sp .button a{
+            padding: 6px 0 6px 0;
+        }
+    }
 }
 
 /* Chinh lai them  */
@@ -57,11 +65,59 @@ body{
     html,body{
         font-size: 16px;
     }
+
+    #zone2{
+        width: 90%;
+        .content{
+            .title{
+                font-size: 1.25em;
+            }
+            .sort{
+                font-size: 1.25em;
+            }
+        }
+        .row{
+            flex-wrap: wrap;
+            position: static;
+        }
+        .products .sp{
+            width: 45%;
+        }
+        .button a{
+            padding: 10px 50px 10px 50px;
+            position: absolute;
+            bottom: -3%;
+            right: 0;
+            font-size: 1.5em;
+        }
+        .sp .button a{
+            padding: 10px 0 10px 0;
+            position: relative;
+            font-size: 100%;
+        }
+    }
 }
 
 /* // `sm` applies to x-small devices (portrait phones L, less than 576px) */
 @media only screen and (max-width: 575.98px) {
-    
+    html,body{
+        font-size: 16px;
+    }
+    #zone2{
+        .content{
+            .title{
+                font-size: 1em;
+            }
+            .sort{
+                font-size: 1em;
+            }
+        }
+        .button a{
+            padding: 8px 40px 8px 40px;
+            font-size: 1.25em;
+            bottom: -4%;
+        }
+    }
 }
 
 /* // `sm` applies to x-small devices (portrait phones M, less than 425px) */
@@ -69,6 +125,7 @@ body{
     html,body{
         font-size: 14px;
     }
+
 }
 
 /* // `sm` applies to x-small devices (portrait phones S, less than 360px) */

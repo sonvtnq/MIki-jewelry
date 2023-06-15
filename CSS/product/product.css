@@ -12,6 +12,7 @@
         width: 15%;
         margin: 5% auto;
         margin-left: 0;
+        white-space: nowrap;
     }
     .content{
         display: flex;
@@ -23,6 +24,7 @@
         .title{
             width: 40%;
             font-size: 1.5em;
+            white-space: nowrap;
             /* border: 1px solid black; */
         }
         .sort{
